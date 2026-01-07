@@ -4,6 +4,8 @@ random/
 # ignore all data folders
 **/data/
 
+**/checkpoints/
+
 # ignore all runs folders
 **/runs/
 
