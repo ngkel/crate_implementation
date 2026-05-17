@@ -30,7 +30,7 @@ The figures below are taken from executed outputs in `notebooks/crate_explained_
 
 ### Low-rankness and layer-wise compression
 
-Coding rate $R^{c}\!\left(Z^{\ell+\frac{1}{2}} \mid U_{[K]}^{\ell}\right)$ decreases from early to late layers, indicating tokens are progressively compressed into their subspaces. Sparsity $\left\lVert Z^{\ell+1} \right\rVert_{0}$ rises through the network, showing ISTA pushes representations toward sparse codes.
+Coding rate decreases from early to late layers, indicating tokens are progressively compressed into their subspaces. Sparsity rises through the network, showing ISTA pushes representations toward sparse codes.
 
 ![Coding rate and sparsity across layers](docs/images/coding_rate_sparsity_layers.png)
 
