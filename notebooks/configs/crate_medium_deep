@@ -1,10 +1,10 @@
 img_size: 28
-patch_size: 7
+patch_size: 4
 in_channels: 1
-embed_dim: 36
+embed_dim: 32
 num_classes: 10
-num_blocks: 12
-num_heads: 6
-dim_head: 6
+num_blocks: 8
+num_heads: 4
+dim_head: 8
 dropout: 0.1
 pool: cls
