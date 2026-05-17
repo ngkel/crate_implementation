@@ -15,7 +15,7 @@ The main walkthrough lives in [`notebooks/crate_explained_fashion.ipynb`](notebo
 
 Each CRATE block alternates:
 
-- **MSSA** (Multi-Scale Self-Attention) — compresses tokens toward learned subspaces \(U_{[K]}^{\ell}\)
+- **MSSA** (Multi-Scale Self-Attention) — compresses tokens toward learned subspaces $U_{[K]}^{\ell}$
 - **ISTA** (Iterative Shrinkage-Thresholding) — promotes sparse token representations
 
 ```
@@ -30,7 +30,7 @@ The figures below are taken from executed outputs in `notebooks/crate_explained_
 
 ### Low-rankness and layer-wise compression
 
-Coding rate \(R^{c}(Z^{\ell+1/2} \mid U_{[K]}^{\ell})\) decreases from early to late layers, indicating tokens are progressively compressed into their subspaces. Sparsity \(\|Z^{\ell+1}\|_0\) rises through the network, showing ISTA pushes representations toward sparse codes.
+Coding rate $R^{c}\!\left(Z^{\ell+\frac{1}{2}} \mid U_{[K]}^{\ell}\right)$ decreases from early to late layers, indicating tokens are progressively compressed into their subspaces. Sparsity $\left\lVert Z^{\ell+1} \right\rVert_{0}$ rises through the network, showing ISTA pushes representations toward sparse codes.
 
 ![Coding rate and sparsity across layers](docs/images/coding_rate_sparsity_layers.png)
 
